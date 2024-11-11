@@ -1,0 +1,102 @@
+/* Contenedor principal */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+/* Contenedor de las opciones de registro y inicio de sesion*/
+.opciones {
+  display: flex;      
+  flex-direction: row;
+  gap: 100px; 
+}
+
+/* Estilos de los contenedores de inicio de sesión y registro */
+.Contenedor {
+  background-color: #7812ec;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 163, 163, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+/* Título de las secciones */
+.Seccion {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Estilos para los campos de entrada */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 2em;
+  padding: none;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Cambio de estilo al hacer foco en los campos */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+/* Estilos para los botones */
+button {
+  background-color: #7812ec;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a08db;
+}
+
+/*Color de linea*/
+br {
+  color: #ffffff;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .Contenedor-inicio-sesion {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .Seccion {
+    font-size: 1.2rem;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  button {
+    font-size: 0.9rem;
+  }
+}
